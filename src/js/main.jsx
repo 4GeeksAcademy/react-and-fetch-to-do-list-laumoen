@@ -4,12 +4,13 @@ import ReactDOM from 'react-dom/client'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap"
 
-import '../styles/index.css'
+import '/src/styles/index.css'
 
-import Home from './components/Home';
+import Home from '/src/js/components/Home.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+    <Home />
+  </React.StrictMode>
+);
